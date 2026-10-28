@@ -1,0 +1,8 @@
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+
+Non-authoritative answer:
+_dmarc.google.com	text = "v=DMARC1; p=reject; rua=mailto:mailauth-reports@google.com"
+
+Authoritative answers can be found from:
+

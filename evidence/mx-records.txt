@@ -1,0 +1,8 @@
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+
+Non-authoritative answer:
+example.com	mail exchanger = 0 .
+
+Authoritative answers can be found from:
+

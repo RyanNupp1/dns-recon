@@ -1,0 +1,9 @@
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+
+Non-authoritative answer:
+example.com	nameserver = elliott.ns.cloudflare.com.
+example.com	nameserver = hera.ns.cloudflare.com.
+
+Authoritative answers can be found from:
+

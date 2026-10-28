@@ -1,0 +1,9 @@
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+
+Non-authoritative answer:
+example.com	text = "v=spf1 -all"
+example.com	text = "_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9"
+
+Authoritative answers can be found from:
+
