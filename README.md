@@ -1,12 +1,12 @@
-DNS Reconnaissance Lab
+# DNS Reconnaissance Lab
 
-Overview
+## Overview
 
 A beginner cybersecurity portfolio project demonstrating DNS reconnaissance, evidence collection, interpretation of DNS records, and technical report writing using Termux on Android.
 
 The lab uses "example.com" for general DNS queries and separately examines the DMARC TXT record published by "google.com".
 
-Objectives
+## Objectives
 
 - Query common DNS record types using "nslookup".
 - Identify IPv4 and IPv6 addresses.
@@ -16,29 +16,29 @@ Objectives
 - Preserve raw command output as evidence.
 - Document findings, limitations, and conclusions in Markdown.
 
-Tools and Environment
+## Tools and Environment
 
 - Android with Termux
 - "nslookup"
 - Google Public DNS ("8.8.8.8")
 - Markdown
-- Git (for version control, once initialized)
+- Git for version control
 
-Methodology
+## Methodology
 
-The lab queries the following records:
+The lab queries the following DNS record types:
 
-Record| Purpose
-A| IPv4 address records
-AAAA| IPv6 address records
-NS| DNS nameservers
-MX| Mail exchange records
-TXT| Text records, including SPF policy
-DMARC TXT| Email-authentication policy at "_dmarc.google.com"
+| Record | Purpose |
+| A | IPv4 address records |
+| AAAA | IPv6 address records |
+| NS | DNS nameservers |
+| MX | Mail exchange records |
+| TXT | Text records, including SPF policy |
+| DMARC TXT | Email-authentication policy at `_dmarc.google.com` |
 
-The raw responses are saved in "evidence/", and their interpretations are documented in "report.md".
+Raw responses are saved in "evidence/", and their interpretations are documented in "report.md".
 
-Repository Structure
+## Repository Structure
 
 dns-recon/
 ├── README.md
@@ -51,17 +51,13 @@ dns-recon/
     ├── txt-records.txt
     └── dmarc-google.txt
 
-Reproducing the Lab
+## Reproducing the Lab
 
 Install the required DNS utility in Termux if it is not already available:
 
 pkg install dnsutils
 
-Create the evidence directory:
-
-mkdir -p evidence
-
-Run the queries:
+Run the queries from the project directory:
 
 nslookup -type=A example.com 8.8.8.8
 nslookup -type=AAAA example.com 8.8.8.8
@@ -72,7 +68,7 @@ nslookup -type=TXT _dmarc.google.com 8.8.8.8
 
 DNS responses may change over time. The included evidence files represent the results collected during this lab.
 
-Key Learning Outcomes
+## Key Learning Outcomes
 
 - Distinguished IPv4 and IPv6 DNS records.
 - Identified nameserver delegation.
@@ -81,16 +77,16 @@ Key Learning Outcomes
 - Examined a DMARC policy using "p=reject".
 - Practiced preserving command output and writing evidence-based conclusions.
 
-Limitations
+## Limitations
 
 This project performs basic public DNS queries only. It does not establish that a domain is vulnerable, validate DNSSEC, or perform an active penetration test.
 
 The DMARC example is separate from the "example.com" findings.
 
-Authorization and Ethics
+## Authorization and Ethics
 
 This exercise uses public DNS queries and does not attempt unauthorized access or intrusive testing. Any future testing of third-party systems must have appropriate authorization.
 
-Detailed Report
+## Detailed Report
 
-See ""report.md"" (report.md) for the methodology, findings, evidence references, limitations, and conclusion.
+See "report.md" (report.md) for the methodology, findings, evidence references, limitations, and conclusion.
