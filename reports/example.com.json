@@ -1,0 +1,56 @@
+{
+    "domain": "example.com",
+    "nameserver": "1.1.1.1",
+    "collected_at": "2026-10-31T12:48:41.459936+00:00",
+    "records": {
+        "A": {
+            "domain": "example.com",
+            "record_type": "A",
+            "nameserver": "1.1.1.1",
+            "results": [
+                "172.66.147.243",
+                "104.20.23.154"
+            ],
+            "status": "success"
+        },
+        "AAAA": {
+            "domain": "example.com",
+            "record_type": "AAAA",
+            "nameserver": "1.1.1.1",
+            "results": [
+                "2606:4700:10::ac42:93f3",
+                "2606:4700:10::6814:179a"
+            ],
+            "status": "success"
+        },
+        "NS": {
+            "domain": "example.com",
+            "record_type": "NS",
+            "nameserver": "1.1.1.1",
+            "results": [
+                "hera.ns.cloudflare.com.",
+                "elliott.ns.cloudflare.com."
+            ],
+            "status": "success"
+        },
+        "MX": {
+            "domain": "example.com",
+            "record_type": "MX",
+            "nameserver": "1.1.1.1",
+            "results": [
+                "0 ."
+            ],
+            "status": "success"
+        },
+        "TXT": {
+            "domain": "example.com",
+            "record_type": "TXT",
+            "nameserver": "1.1.1.1",
+            "results": [
+                "\"v=spf1 -all\"",
+                "\"_k2n1y4vw3qtb4skdx9e7dxt97qrmmq9\""
+            ],
+            "status": "success"
+        }
+    }
+}
